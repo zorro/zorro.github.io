@@ -155,7 +155,7 @@ a{
   width: 400px;
   background: rgba(255,255,255,0.1);
   overflow: hidden;*/
-  background: url('../images/playerimage.png');
+  background: url('../images/playerimage.svg');
   background-size: cover;
 }
 .bod-background::before{
