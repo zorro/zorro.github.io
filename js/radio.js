@@ -2,11 +2,11 @@
   for ([x, y] of Object.entries(channels)) {
     var li = document.createElement("li")
     li.classList.add("selectchannel")
-    li.setAttribute("data-channel", y.mediaid)
+    li.setAttribute("data-channel", y.id)
     //li.appendChild(document.createElement("img")).setAttribute("src", "images/vividh-bharati.jpg")
     var n = document.createElement("div")
     n.classList.add("channel-name")
-    n.innerText = y.title
+    n.innerText = y.name
     li.appendChild(n)
     cc.appendChild(li)
   }
@@ -18,8 +18,8 @@
   var WPURLS = "http://allindiaradio.gov.in";
   $(window).on('load', function(e) {
     var filture = channels[channel];
-    $('.channel-img').attr('src',filture.thumbnail);
-    $('.air-channel-name').html(filture.title);
+    $('.channel-img').attr('src',filture.image);
+    $('.air-channel-name').html(filture.name);
     $('.loader').fadeOut(function() {
       air_radio_play();
     });
@@ -42,11 +42,11 @@
       var filture = channels[channel];
       $('#view_page').attr("href", WPURLS + filture.page);
       $('.channel-img').fadeOut("fast", function() {
-        $(this).attr('src', filture.thumbnail);
+        $(this).attr('src', filture.image);
         $(this).fadeIn("fast")
       });
-      $('.channel-img').attr('src',filture.thumbnail);
-      $('.air-channel-name').html(filture.title);
+      $('.channel-img').attr('src',filture.image);
+      $('.air-channel-name').html(filture.name);
       // console.log(channel);
       air_radio_pause();
       air_radio_play();
