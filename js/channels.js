@@ -2,7 +2,7 @@ var channels = {
   "1": {
     "id": "1MUM",
     "title": "Vividh Bharati",
-    "link": "http://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8",
+    "link": "https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8",
     "thumbnail": "images/vividh-bharati.jpg",
     "category": "NEWS",
     "classification": "GEC",
