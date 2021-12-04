@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All India Radio Live</title>
+  <link rel="stylesheet" type="text/css" href="css/radio.css">
+  <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
+  <link rel="stylesheet" type="text/css" href="fontello/css/animation.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/hls.js"></script>
+  <!-- <script type="text/javascript" src="js/player.js"></script> -->
+  <script src="js/channels.js"></script>
+</head>
+
+<body>
+  <div class="air-player">
+    <div class="body-background">
+      <!-- <img  class="blur" src="images/playerimage.png"> -->
+      <div class="container">
+        <!--		<div class="loader">
+				<img src="images/loading.gif">
+			</div> -->
+        <center>
+          <img class="channel-img" src="images/vividh-bharati.jpg">
+          <div class="play-btn">
+            <i class="play-icon icon-play"></i>
+            <audio id="air-player-audio"></audio>
+          </div>
+        </center>
+        <div class="vol-contain">
+          <div class="volume-set">
+            <i class="icon-volume-up"></i>
+          </div>
+          <div class="volume-bar">
+            <div class="volume-adjust">
+              <div>
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <center>
+          <div class="channel-title">
+            <div class="air-channel-name"></div>
+          </div>
+        </center>
+        <div class="channel">
+          <ul id="channel-list">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<script type="text/javascript" src="js/radio.js">
+</script>
