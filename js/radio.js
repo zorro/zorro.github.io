@@ -11,7 +11,7 @@
     cc.appendChild(li)
   }
   var audio;
-  var channel = "1";
+  var channel = localStorage.getItem("my");
   var currentactive = '.channel>ul>li[data-channel=' + channel + ']';
   var volume = 1;
   var voulmedrag = false;
@@ -38,6 +38,7 @@
       var _href = $('#view_page').attr("href");
       channel = $(this).attr('data-channel');
       $('.channel>ul>li.active').removeClass('active');
+      localStorage.setItem("my",channel)
       $(this).addClass('active');
       var filture = channels[channel];
       $('#view_page').attr("href", WPURLS + filture.page);
