@@ -160,7 +160,7 @@
 
   function hlsload(stream)
   {
-   /* if (Hls.isSupported())
+    if (Hls.isSupported())
     {
       audio = document.getElementById('air-player-audio');
       var hls = new Hls();
@@ -169,10 +169,10 @@
       hls.on(Hls.Events.MANIFEST_PARSED, function() {});
     }
     else
-    {*/
+    {
       audio = document.getElementById('air-player-audio');
       audio.src = stream;
-   // }
+    }
   }
   var updateVolume = function(x, vol)
   {
